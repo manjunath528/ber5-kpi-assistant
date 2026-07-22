@@ -150,6 +150,19 @@ Successful values are `true`, `yes`, `success`, `successful`, and `1`. Failed va
 
 Supported source date formats are Google Sheet date cells, `2026-07-15`, `15.07.2026`, and `15/07/2026`.
 
+## Sample Raw Data
+
+Fictional sample data is available for development and testing:
+
+| File | Purpose |
+|---|---|
+| `test-data/raw-data-sample.csv` | CSV import for the Google Sheet `Raw Data` tab. |
+| `test-data/raw-data-sample.xlsx` | Excel version of the same sample dataset. |
+
+The sample data uses the exact `Raw Data` column names and column order expected by the Apps Script. It contains 100 fictional rows across dates from `2026-07-01` through `2026-07-14`, with varied successful gradings, failed gradings, locked statuses, and completed returns.
+
+To use it, import the CSV or Excel file into a development or test Google Sheet tab named `Raw Data`. Keep the first row as the header row and do not change the columns. Do not import this sample data into a production reporting sheet.
+
 ## Coworker Workflow
 
 1. Open the app.
