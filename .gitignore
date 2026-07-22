@@ -1,0 +1,13 @@
+# Local configuration
+application-local.properties
+application-local.yml
+
+# IDE
+.idea/
+.vscode/
+
+# Build
+target/
+
+# macOS
+.DS_Store

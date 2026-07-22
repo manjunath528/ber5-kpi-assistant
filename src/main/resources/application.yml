@@ -1,0 +1,15 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: ber5-kpi-assistant
+  thymeleaf:
+    cache: false
+
+ber5:
+  data-mode: ${BER5_DATA_MODE:MOCK}
+  apps-script-url: ${BER5_APPS_SCRIPT_URL:}
+  apps-script-api-key: ${BER5_APPS_SCRIPT_API_KEY:}
+  connect-timeout: 5s
+  read-timeout: 10s

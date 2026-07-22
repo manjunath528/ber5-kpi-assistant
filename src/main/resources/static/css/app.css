@@ -1,0 +1,77 @@
+:root {
+  --page-bg: #f6f7f9;
+  --panel-bg: #ffffff;
+  --border: #d9dee7;
+  --text-soft: #5d6675;
+}
+
+body {
+  background: var(--page-bg);
+  color: #1f2937;
+}
+
+.section-block,
+.metric-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.date-control {
+  min-width: min(100%, 320px);
+}
+
+.mode-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 0.875rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #f9fafb;
+  color: var(--text-soft);
+}
+
+.metric-card {
+  min-height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.metric-card span {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.metric-card strong {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.calculation-box {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.calculation-box span,
+.calculation-box small {
+  color: var(--text-soft);
+}
+
+.calculation-box strong {
+  font-size: 2.25rem;
+}
+
+.slack-preview {
+  width: 100%;
+  min-height: 430px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  resize: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
